@@ -1,0 +1,22 @@
+# Site settings
+title: Nenad Latinović
+tagline: Writer, thinker, explorer of ideas
+description: Personal website of Nenad Latinović
+baseurl: ""
+url: "https://nltnv.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /writing/:year/:month/:day/:title/
+
+# Exclude files
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
