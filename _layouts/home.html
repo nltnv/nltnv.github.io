@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="container home-container">
+    <div class="profile-section">
+        <div class="profile-picture">
+            <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="{{ site.title }}">
+        </div>
+        <h1 class="site-title">{{ site.title }}</h1>
+        <p class="tagline">{{ site.tagline }}</p>
+    </div>
+
+    <nav class="cta-nav">
+        <a href="{{ '/about' | relative_url }}" class="cta-button">About</a>
+        <a href="{{ '/now' | relative_url }}" class="cta-button">Now</a>
+        <a href="{{ '/writing' | relative_url }}" class="cta-button">Writing</a>
+    </nav>
+</div>
