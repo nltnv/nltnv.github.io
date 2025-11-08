@@ -6,7 +6,7 @@
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-<body class="{{ page.layout }}">
+<body class="{{ page.layout }} {% if page.title %}{{ page.title | downcase | replace: ' ', '-' }}-container{% endif %}">
     {{ content }}
 </body>
 </html>
